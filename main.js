@@ -265,7 +265,7 @@ function setupGUI() {
 
     var gui = new dat.GUI();
 
-    gui.add(p, 'quality', ['fast', 'medium', 'high']).onChange(function (value) {
+    gui.add(p, 'quality', ['fast', 'medium', 'high', 'extreme', 'ultra']).onChange(function (value) {
         $('.planet-controls').show();
         switch(value) {
         case 'fast':
