@@ -278,6 +278,12 @@ function setupGUI() {
         case 'high':
             p.n_steps = 200;
             break;
+        case 'ultra':
+            p.n_steps = 400;
+            break;
+        case 'extreme':
+            p.n_steps = 800;
+            break;
         }
 
         updateShader();
