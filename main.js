@@ -265,7 +265,7 @@ function setupGUI() {
 
     var gui = new dat.GUI();
 
-    gui.add(p, 'quality', ['fast', 'medium', 'high', 'extreme', 'ultra']).onChange(function (value) {
+    gui.add(p, 'quality', ['fast', 'medium', 'high', 'extreme', 'ultra', 'insane', 'godlike', 'godlike*2']).onChange(function (value) {
         $('.planet-controls').show();
         switch(value) {
         case 'fast':
@@ -283,6 +283,15 @@ function setupGUI() {
             break;
         case 'extreme':
             p.n_steps = 800;
+            break;
+        case 'insane':
+            p.n_steps = 1600;
+            break;
+        case 'godlike':
+            p.n_steps = 3200;
+            break;
+        case 'godlike*2':
+            p.n_steps = 6400;
             break;
         }
 
