@@ -75,8 +75,8 @@ var observer = new Observer();
 function Shader(mustacheTemplate) {
     // Compile-time shader parameters
     this.parameters = {
-        n_steps: 100,
-        quality: 'medium',
+        n_steps: 3200,
+        quality: 'godlike',
         accretion_disk: true,
         planet: {
             enabled: true,
